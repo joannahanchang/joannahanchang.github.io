@@ -16,7 +16,14 @@ body {
 
 .side-bar-nav {
 	padding: 1rem;
-	
+}
+
+.side-bar-nav a {
+	color: white;
+}
+
+.side-bar-nav.header {
+	font-size: 1.5rem;
 }
 
 .main-content {
