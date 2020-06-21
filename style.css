@@ -1,8 +1,90 @@
+/* Add a gray background color */
 body {
+	background-color: white;
+	margin: 0;
 }
 
+.introduction {
+	padding: 80px;
+}
+.introduction h2 {
+	color: #666565;
+	text-align: left;
+	font-size: 55px;
+}
+
+.introduction h3{
+	color: #666565;
+	text-align: left;
+	font-size: 25px;
+}
+
+
+/* Add a lime green background color to the top navigation */
+.topnav {
+	background-color: #cddc39;
+	overflow: hidden;
+  }
+
+  .topnav .link-container {
+	float: right;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-size: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #cddc39;
+	color: #666565;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #cddc39;
+	color: white;
+  }
+
+/* Add a lime green background color to the footer */
+.connect{
+	background-color: #cddc39;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	padding: 35px 35px;
+	text-decoration: none;
+	font-size: 25px;
+  }
+
+.connect h2 {
+	margin: 0;
+	font-size: 25px;
+}
+
+strong.heavy {
+	color: #cddc39;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .page-container {
-	display: flex;
+	display: flex; */
 	width: 100%;
 	height: 100%;
 	min-height: 100%;
