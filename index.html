@@ -2,35 +2,54 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+	<!-- Additional CSS must be placed after Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	
 	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-	<div class="topnav">
-		<a class="active" href="#home">Home</a>
-		<div class="link-container">
-			<a href="#30weeks.html">30 Weeks of Coding</a>
-			<a href="#projects">Projects</a>
-			<a href="#about">About</a>
-			<a href="#tech">Tech</a>
-			<a href="#contact">Contact</a>
+		<div class="topnav">
+			<a class="active" href="index.html">Home</a>
+			<div class="link-container">
+				<a href="30weeks.html">30 Weeks of Coding</a>
+				<a href="projects.html">Projects</a>
+				<a href="about.html">About</a>
+				<a href="tech.html">Tech</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+
+	<div class="page-container">
+		<div class="introduction">
+			<h2>Hi, I'm Joanna. 
+		
+			<h3>I'm creating this website from scratch using HTML, CSS, JavaScript, and Bootstrap to help me learn to code.  I've embarked on my <a href="30weeks.html" class="weeks">30 Weeks of Coding</a> journey 5 weeks ago.</h3>
+
+		<form>
+			<button formaction="about.html" class="learnmore">Learn More About Me</button>
+		</form>
+
+		<!-- <button onclick="myFunction()">Click me</button> -->
+
 		</div>
 	</div>
-
-	<div class="introduction">
-		<h2>Hi, I'm Joanna.  
-	
-		<h3>I'm creating this website from scratch using HTML, CSS, JavaScript, and Bootstrap to help me learn to code.  I've embarked on my <a href="#30weeks.html">30 Weeks of Coding</a> journey <strong class="heavy">5</strong> weeks ago.</h3>
-	</div>
-
 	<footer>
-		<div class="connect">
-			Joanna Chang | 2020
-		</div>
-	</div>
-</div>
-</footer>
+
+			<div class="footer">
+				<a role="button" class="btn btn-link" href="mailto:joannahanchang@gmail.com"><i class="fa fa-envelope-o"></i> joannahanchang@gmail.com</a>
+				<br>Joanna Chang | 2020 
+			</div>
+	</footer>
 
 
 

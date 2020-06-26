@@ -1,24 +1,28 @@
-/* Add a gray background color */
+/* Add a white background color */
 body {
 	background-color: white;
+	color: #666565;
 	margin: 0;
 }
 
+/* Add padding to intro */
 .introduction {
-	padding: 80px;
+	padding: 100px;
 }
+
+/* Add color and modify font and colors to intro h2 */
 .introduction h2 {
 	color: #666565;
 	text-align: left;
 	font-size: 55px;
 }
 
-.introduction h3{
+/* Add color and modify font and colors to intro h3 */
+.introduction h3 {
 	color: #666565;
 	text-align: left;
 	font-size: 25px;
 }
-
 
 /* Add a lime green background color to the top navigation */
 .topnav {
@@ -26,11 +30,12 @@ body {
 	overflow: hidden;
   }
 
-  .topnav .link-container {
+/* Align topnav right */
+.topnav .link-container {
 	float: right;
   }
 
-  /* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar */
   .topnav a {
 	float: left;
 	color: white;
@@ -38,77 +43,231 @@ body {
 	padding: 20px 20px;
 	text-decoration: none;
 	font-size: 25px;
-  }
+}
   
-  /* Change the color of links on hover */
+/* Change the color of links on hover */
   .topnav a:hover {
 	background-color: #cddc39;
 	color: #666565;
   }
   
-  /* Add a color to the active/current link */
+/* Add a color to the active/current link */
   .topnav a.active {
 	background-color: #cddc39;
 	color: white;
   }
 
 /* Add a lime green background color to the footer */
-.connect{
+.footer {
 	background-color: #cddc39;
 	overflow: hidden;
 	color: white;
 	text-align: center;
-	padding: 35px 35px;
+	padding: 20px 20px;
 	text-decoration: none;
 	font-size: 25px;
   }
 
-.connect h2 {
-	margin: 0;
+/* Homepage 30 Weeks of Coding: Unvisited link */
+.weeks:link {
+	color: #cddc39;
+	text-decoration: none;
+  }
+  
+/* Homepage 30 Weeks of Coding: Visited link */
+.weeks:visited {
+	color: #cddc39;
+	text-decoration: none;
+}
+
+/* Homepage 30 Weeks of Coding: Mouse over link */
+.weeks:hover {
+	color: #cddc39;
+	text-decoration: underline;
+  }
+  
+/* Homepage 30 Weeks of Coding: Selected link */
+.weeks:active {
+	color: #cddc39;
+	text-decoration: underline;
+  }
+
+/* Learn More About Me: Button styling */
+.learnmore {
+	border: none;
+	color: #666565;
+	background-color: #cddc39;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 30px 1px 30px 1px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+/* Learn More About Me: Hover */
+.learnmore:hover {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	opacity: 0.7;
+}
+/* Learn More About Me: Hover */
+.learnmore:active {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+}
+
+/* Learn More About Me: Focus*/
+.learnmore:focus {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+}
+
+/* Change font of Contact Me to gray */
+.contactme h2 {
+	color: #666565;
+	font-size: 35px;
+	padding: 20px 0;
+}
+
+/* Send: Button styling */
+.btn {
+	background-color: #666565;
+	color: white;
+	border: none;
+}
+
+/* .btn.btn-primary {
+ background-color:;
+} */
+
+/* Send: Hover */
+.btn:hover {
+	background-color: #cddc39;
+	color: white;
+	border-color: #666565;
+	outline: 0;
+	opacity: 0.7;
+}
+
+/* Send: Active */
+.btn:active {
+	background-color: #cddc39;
+	color: white;
+	border-color: #666565;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+}
+
+/* Send: Focus */
+.btn:focus {
+	background-color: #cddc39;
+	color: white;
+	border-color: #666565;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+}
+
+
+/* Change the color of links on hover */
+.form-control:focus {
+	color: #666565;
+	background-color: white;
+	border-color: #666565;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+  }
+
+/* Change font of Technologies to gray and modify font and padding */
+.technologies h2 {
+	color: #666565;
+	font-size: 35px;
+	padding: 20px 0;
+}
+
+/* Change positon to center */
+.large-text {
+	font-size:60px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Change font of Projects to gray and modify font and padding */
+.projects h2 {
+	color: #666565;
+	font-size: 35px;
+	padding: 20px 0;
+}
+
+/* Change color and font size of email in footer */
+.btn-link {
+	background-color: #cddc39;
+	color: white;
 	font-size: 25px;
 }
 
-strong.heavy {
-	color: #cddc39;
+/* Add lime green border to contact form */
+.container.projects .col-sm-6 {
+  border: solid #cddc39;
+  font-size: 20px;
+  min-height: 80px;
+  text-align: center;
 }
 
+/* .row div {
+	border: solid #cddc39;
+}  */
 
 
+/* Add padding and modify font and colors to intro */
+.container {
+	padding: 50px 5px;
+}
 
+.container img {
+	float: left;
+	padding: 0 10px 10px 0;
+	height: 260px;
+	width: 230px;
+}
 
-
-
-
-
-
-
+.container p {
+	font-size: 16px;
+	text-align: right;
+}
 
 .page-container {
-	display: flex; */
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
+	min-height: 500px;
 }
 
-.side-bar {
-	width: 10rem;
-	background-color: gray;
-	color: white;
-}
 
-.side-bar-nav {
-	padding: 1rem;
-}
+/* TO DO: Re-arrange style.csss coding and create separate style.css file for each page */ 
 
-.side-bar-nav a {
-	color: white;
-}
 
-.side-bar-nav.header {
-	font-size: 1.5rem;
-}
+/* NOT WORKINGChange font of Projects to gray and modify font and padding
+.project {
+	color: #666565;
+	font-size: 35px;
+	padding: 20px 0;
+} */
 
-.main-content {
-	flex: 1 1 0;
-	background-color: white-smoke;
-}
+/* Add lime green border to contact form */
+/* .projects row {
+	border: solid #cddc39;
+  } */
+
+/* .row div {
+	border: solid #cddc39;
+} */ 
+
+
