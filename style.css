@@ -147,10 +147,6 @@ body {
 	border: none;
 }
 
-/* .btn.btn-primary {
- background-color:;
-} */
-
 /* Send: Hover */
 .btn:hover {
 	background-color: #cddc39;
@@ -248,6 +244,56 @@ body {
 
 .page-container {
 	min-height: 500px;
+}
+
+
+.container-weeks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.week-box {
+	/* flex: 0 0 auto; */
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	width: 150px;
+	height: 19px;
+	border: 1px solid;
+	margin: 20px;
+	background-color: #cddc39;
+	color: #666565;
+	text-align: center;
+	font-size: 12px;
+	border: none;
+}
+
+/* 30 Weeks: Hover */
+.week-box:hover {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	opacity: 0.7;
+}
+/* 30 Weeks: Hover */
+.week-box:active {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
+}
+
+/* 30 Weeks: Focus*/
+.week-box:focus {
+	background-color: #cddc39;
+	color: #666565;
+	border-color: #cddc39;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
 
