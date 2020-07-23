@@ -175,7 +175,7 @@ body {
 }
 
 
-/* Change the color of links on hover */
+/* Change the color of links on focus */
 .form-control:focus {
 	color: #666565;
 	background-color: white;
@@ -316,4 +316,7 @@ body {
 	border: solid #cddc39;
 } */ 
 
-
+/*Center align in Projects page*/
+.container.projects p {
+	text-align: center;
+}
