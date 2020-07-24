@@ -5,32 +5,32 @@ body {
 	margin: 0;
 }
 
-/* Add padding to intro */
+/* Add a padding to intro */
 .introduction {
 	padding: 100px;
 }
 
-/* Add color and modify font and colors to intro h2 */
+/* Add a color and modify font and colors to intro h2 */
 .introduction h2 {
 	color: #666565;
 	text-align: left;
 	font-size: 55px;
 }
 
-/* Add color and modify font and colors to intro h3 */
+/* Add a color and modify font and colors to intro h3 */
 .introduction h3 {
 	color: #666565;
 	text-align: left;
 	font-size: 25px;
 }
 
-/* Add a lime green background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
 	background-color: #cddc39;
 	overflow: hidden;
   }
 
-/* Align topnav right */
+/* Align the topnav to the right */
 .topnav .link-container {
 	float: right;
   }
@@ -57,7 +57,7 @@ body {
 	color: white;
   }
 
-/* Add a lime green background color to the footer */
+/* Add a background color to the footer */
 .footer {
 	background-color: #cddc39;
 	overflow: hidden;
@@ -133,7 +133,7 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-/* Change font of Contact Me to gray */
+/* Change tne font of Contact Me*/
 .contactme h2 {
 	color: #666565;
 	font-size: 35px;
@@ -174,8 +174,7 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-
-/* Change the color of links on focus */
+/* Change the color of links when on focus */
 .form-control:focus {
 	color: #666565;
 	background-color: white;
@@ -184,69 +183,67 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
   }
 
-/* Change font of Technologies to gray and modify font and padding */
+/* Change the font of Technologies and modify font and padding */
 .technologies h2 {
 	color: #666565;
 	font-size: 35px;
 	padding: 20px 0;
 }
 
-/* Change positon to center */
+/* Change the position to center */
 .large-text {
 	font-size:60px;
 	text-align: center;
 	margin: 0 auto;
 }
 
-/* Change font of Projects to gray and modify font and padding */
+/* Change the font of Projects to gray and modify font and padding */
 .projects h2 {
 	color: #666565;
 	font-size: 35px;
 	padding: 20px 0;
 }
 
-/* Change color and font size of email in footer */
+/* Change the color and font size of email in footer */
 .btn-link {
 	background-color: #cddc39;
 	color: white;
 	font-size: 25px;
 }
 
-/* Add lime green border to contact form */
+/*Add a color and align the contact form*/
 .container.projects .col-sm-6 {
   border: solid #cddc39;
   font-size: 20px;
-  min-height: 80px;
+  min-height: 150px;
   text-align: center;
 }
-
-/* .row div {
-	border: solid #cddc39;
-}  */
-
 
 /* Add padding and modify font and colors to intro */
 .container {
 	padding: 50px 5px;
 }
 
-.container img {
+/*Change alignment of the image on the About Me page*/
+.container.aboutme img {
 	float: left;
 	padding: 0 10px 10px 0;
 	height: 260px;
-	width: 230px;
+	width: 240px;
 }
 
-.container p {
+/*Change font and alignment of paragraphs on the About Me page*/
+.container.aboutme p {
 	font-size: 16px;
 	text-align: right;
 }
 
+/*Set height of page container*/
 .page-container {
 	min-height: 500px;
 }
 
-
+/*30 Weeks: set alignment*/
 .container-weeks {
 	display: flex;
 	flex-wrap: wrap;
@@ -254,6 +251,7 @@ body {
 	padding: 20px;
 }
 
+/*30 Weeks box: set alignment and colors*/
 .week-box {
 	/* flex: 0 0 auto; */
 	flex-grow: 0;
@@ -296,27 +294,15 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-
-/* TO DO: Re-arrange style.csss coding and create separate style.css file for each page */ 
-
-
-/* NOT WORKINGChange font of Projects to gray and modify font and padding
-.project {
-	color: #666565;
-	font-size: 35px;
-	padding: 20px 0;
-} */
-
-/* Add lime green border to contact form */
-/* .projects row {
-	border: solid #cddc39;
-  } */
-
-/* .row div {
-	border: solid #cddc39;
-} */ 
-
-/*Center align in Projects page*/
-.container.projects p {
+/*Center align on Projects page*/
+.container projects p {
 	text-align: center;
+}
+
+/*Center images in on Projects page*/
+.container projects img {
+	float: center;
+	padding: 10px;
+	height: auto;
+	width: 600px;
 }
