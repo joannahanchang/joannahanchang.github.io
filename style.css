@@ -257,14 +257,14 @@ body {
 	flex-grow: 0;
 	flex-shrink: 0;
 	flex-basis: auto;
-	width: 150px;
-	height: 19px;
+	width: 175px;
+	height: 120px;
 	border: 1px solid;
 	margin: 20px;
 	background-color: #cddc39;
 	color: #666565;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	border: none;
 }
 
