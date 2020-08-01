@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap.min.css" />
+
+	<!-- Additional CSS must be placed after Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/bootstrap-social.css" />
+
+	<link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<div class="link-container">
+			<a href="30weeks.html">30 Weeks of Coding</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a href="tech.html">Tech</a>
+			<a href="contact.html">Contact</a>
+		</div>
+    </div>
+
+    <div class="page-container">
+        <div class="col-12 col-sm-12">
+            <div class="contactme">
+                <h2>30 Weeks of Coding</h2> 
+                <h4>I am embarking on a 30-week long coding journey with NuCamp, an engineering bootcamp.</h4>
+                <h4>I am documenting my progress, highlighting the knowledge and skills I have acquired, and showcasing the projects I have created.</h4>
+                <h4>Source: NuCamp</h4>
+            <nav>
+                <br>
+                <a href="#week10">Week 10</a> | <a href="#week11">Week 11</a> | <a href="#week12">Week 12</a> | <a href="#week13">Week 13</a> | <a href="#week14">Week 14</a>
+            </nav>
+        </div>
+        <br>
+        <section id="week10">
+            <h4>Week 10:</h4>
+            <ul>
+                <li>I learned a new feature in JavaScript ES6 called template literals/template strings/string interpolation.  With template literal syntax, I could write using backticks around the entire string and ${} around the variables being interpolated.</li>
+                <li>I learned about the object data type, which is the only data type that is not considered a primitive.  It is a data structure for a collection of data than a singular piece of data.</li>
+                <li>Objects can have properties and methods - which are variables and functions that belong to that object.  We can also add custom methods to objects.</li>
+                <li>I learned about the "this" keyword with objects in JavaScript.</li> 
+                <li>I learned about JavaScript classes, which are templates for objects and can be used to create multiple instances of the same kind of object.</li> 
+                <li>I learned about adding default properties with class constructors, and class methods to create class instances (objects) with the new keyword</li>
+                <li>I learned about class inheritance, where we could create child classes based on parent classes.  The child class inherits the properties and methods of the parent class.  A child class can also add its own properties and methods without affecting the parent class.  We could also make a child class from a parent class using the extends keyword.</li>
+                <li>The super method is a special method for child constructors to pass those properties that are inherited from the parent class to be initialized in the constructor there.  You must use it with inherited properties, properties that are defined in the parent class' constructor.</li>
+                <li>We reviewed arrays and array methods, including the meaning of the terms higher-order function and callback function.  A higher order function is a function that takes another function as an argument, or returns a function as a return value.  A callback function is a function that is passed into a higher order function as an argument, then used inside it (called back).</li>
+                <li>I learned about 3 advanced array methods - maps, filter, and reduce - which are higher order functions, each taking a callback function as an argument.  The callback function is defined by the programmer and is usually in the form of an arrow function.  None of these methods are mutator methods (they do not change the original array).  Instead, they can be classified as iteration methods (they iterate through the array as many times as the array length).</li>
+                <li>These 3 array methods all have return values, although not all array methods do.  Map and filter both return a new array, while reduce returns a single value and not an array.</li>
+                <li>Map iterates through an array and performs a given callback function on every item in the array.  Map returns a new array of the same length as the old array, but will typically chagne the array items' values.</li>
+                <li>Filter takes a callback function that specifies a filtering condition, iterates through an array, and returns a new, filtered array.  Filter will return a new array, and the length (number of items) in the array may changed, but the values of the filtered array items will not change.</li>
+                <li>Reduce will not return an array at all.  Instead, it will return a single value.  When working with array of objects, we would need to set an initial value for reduce.</li>
+                <li>I also learned about creating arrays of objects using object literals.  I learned about using array of objects with the filter method and reduce method.  Specifically for the reduce method, it is important to set an inital value with an array of objects.</li>
+                <li>I learned about method chaining, which means running multiple methods in a single statement by use of return values.  Methods must have return values in order to be chained, which map, filter, and reduce all do.  It is important to note that map and filter return new arrays while reduce returns a single value.</li>
+                <li><strong>Code Challenge:</strong> There were 6 challenges this week, which can be found in my CodePen: <a href="https://codepen.io/joannahanchang/pen/wvMbzpo">Template Literals</a>, <a href="https://codepen.io/joannahanchang/pen/pogmEGV">Objects</a>, <a href="https://codepen.io/joannahanchang/pen/JjGqzVp">Class Inheritance</a>, <a href="https://codepen.io/joannahanchang/pen/PoZrjMg">Map</a>, <a href="https://codepen.io/joannahanchang/pen/oNbrezP">Filter</a>, and <a href="https://codepen.io/joannahanchang/pen/yLedoKo">Reduce</a>.</li>
+                <li><strong>Project:</strong> I practiced creating and using objects, class, constructors, properties, and methods with JavaScript.</li>
+            </ul>
+        </section>
+        <br>
+        <section id="week11">
+            <h4>Week 11:</h4>
+
+        </section>
+        <br>
+        <section id="week12">
+            <h4>Week 12:</h4>
+
+        </section>
+        <br>
+        <section id="week13">
+            <h4>Week 13:</h4>
+
+        </section>
+        <br>
+        <section id="week14">
+            <h4>Week 14:</h4>
+
+        </section>
+        </div>
+
+<footer>
+    <div class="footer">
+        <a role="button" class="btn btn-link" href="mailto:joannahanchang@gmail.com"><i class="fa fa-envelope-o"></i> joannahanchang@gmail.com</a>
+        <br>Joanna Chang | 2020 
+    </div>
+</footer>
+</body>
+</html>
