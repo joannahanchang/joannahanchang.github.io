@@ -80,15 +80,34 @@
                 <li>I practiced lifting state up from one component to its parent component, then passed the state information down as props, changing references from state to props as appropriate.</li>
                 <li>I learned to set up Reactstrap Card components and added functionality to display more information when user clicks.</li>
                 <li><strong>Code Challenge:</strong> There were 3 challenges this week, which can be found in my CodePen: <a href="https://codepen.io/joannahanchang/pen/WNrVaOO">JSX and State</a>, <a href="https://codepen.io/joannahanchang/pen/pogMqjJ">Constructing Lists</a>, <a href="https://codepen.io/joannahanchang/pen/WNwebKQ">Passing Props</a>.</li>
-                <li><strong>Project:</strong>.</li>
-            </ul>
-        
-
+                <li><strong>Project:</strong> I added a new component and used the Card component and the Bootstrap unstyled list component in my React Nucamp website, which can be found in my <a href="https://github.com/joannahanchang/React-Project-Setup">Github</a>.</li></li>
+            </ul>     
         </section>
         <br>
         <section id="week12">
             <h4>Week 12:</h4>
-
+        <ul>
+            <li>I learned about JavaScript object destructuring assignment syntax, which was introduced in ES6.  It gives a shortcut for accessing properties inside objects, or items inside arrays, and putting them inside new variables.  Object destructuring is basically a shorthand to more easily pull properties out of objects and assign them to variables or as arguments for function parameters.</li>
+            <li>I was introduced to container components and presentational components.  Container components fetch and manage state data, pass data to presentational components for rendering, and do not render UI.  Presentational components render UI – markup, styles – based on props passed to them.  They do not maintain their own state – only light UI state if any.</li>
+            <li>I practiced structuring the Nucamp website app into presentational and container components by creating a new container component named Main and moving the campsites data into its state, and restructuring the Directory component as a purely presentational component, among other updates.</li>
+            <li>Functional components are written just like a function as a function declaration, function expression, or error function.  Typically, they are written as function declarations or arrow functions.  They need to accept props as an argument.  Like class components, they will always return at least one react element, but they do not use the render method around the return, and they will never have a constructor method.  Another difference is that when you refer to props inside a functional component, we do not use the this keyword.</li> 
+            <li>In sum, functional components have no render() method, no constructor method; cannot hold state, and cannot use lifecycle methods.  But a recent version of React (v. 16.8) introduced an addition called hooks that provides ways for functional components to access state and lifecycle methods.</li> 
+            <li>I learned about converting class components and methods to functional components.  I practiced converting the Nucamp website components and methods to functional components, and gained practice in using object destructuring syntax in function parameter lists.</li>
+            <li>I was introduced to the React virtual DOM.  It is much faster and easier to update the virtual DOM than the browser DOM – no re-rendering of graphical display.  Any DOM changes made with React are first made to the virtual DOM.</li>
+            <li>React uses a process called reconciliation to compare and find differences between (“diff”)  the virtual DOM and the browser DOM.  Sophisticated reconciliation engine named Fiber looks for what has changed, then figures out the most optimized way to patch the browser DOM with the changes with minimal re-rendering, such as by combining updates in batches instead of multiple single changes.</li>
+            <li>I updated my Nucamp website React application to integrate a Header and Footer component, along with installing Font-Awesome and Boostrap-Social libraries to use their icon kits and adding new CSS rules.</li>
+            <li>I learned to use React Fragments.</li>
+            <li>Unlike in Bootstrap, in React, we will not have multiple HTML pages.  Instead, we will use React to build a Single Page App (SPA), launched from a single HTML page.</li>
+            <li>A routing library such as React router is crucial to an SPA.  React router is a popular third-party library in the React ecosystem.  It is a collection of router, route matching, and navigation components.  It handles routing requests to navigate to different views, generate unique, bookmarkable URL for each view, and handles browser history – ability to move back and forward.  Some React Router components include BrowserRouter, Route, Redirect, Switch, Link, and NavLink.</li>
+            <li>I learned to install React Router and set it up to route views within the NuCamp website.  First, I learned to wrap the root component of the site, App, inside the BrowserRouter component.  Then I used Route components within a Switch grouping in the Main component to define the various routes, and set up NavLink and Link components to direct to those routes from the Header and Footer components.  I also set up a new component, Home, to render the default view when the website is loaded without a specific route.</li>
+            <li>SPA is a one page that locally downloads all the front-end application code for the website (HTML, CSS, JS).  When switching views, the application intelligently handles the front-end rendering, making minimum requests to the server (for database data, for example), and re-rendering only what is changed.</li>
+            <li>Pros of SPA include: much faster due to fewer server requests, streamlined development: easier to divide back end and front end tasks, easily reuse back end code for mobile development, and easier to debug in browser.</li>
+            <li>Cons of SPA include: Search engines can have trouble indexing SPAs (though they are improving), so SPAs are typically best for websites behind a login that would not be indexed anyway, dependent on JavaScript being enabled in browser, initial download of application code can be slow, and must be careful of memory leaks.</li>
+            <li>SPA does not use traditional browser navigation of going to new HTML page for each view, and there are concerns such as clicking on links to render different views, using Back/Forward buttons for browser history, etc.</li>
+            <li>I practiced using React router route parameters to render the view of a specific campsite by its ID number and adding breadcrumbs among other items.</li>
+            <li><strong>Code Challenge:</strong> There were 3 challenges this week, which can be found in my CodePen: <a href="https://codepen.io/joannahanchang/pen/ExKjPRV">React Components and Object Destructuring</a>, <a href="https://codepen.io/joannahanchang/pen/ZEWGWmK">Lifting State Up and Function Components</a>, <a href="https://codepen.io/joannahanchang/pen/abNvbVa">React Router Params</a>.</li>
+            <li><strong>Project:</strong> I.... in my React Nucamp website, which can be found in my <a href="https://github.com/joannahanchang/React-Project-Setup">Github</a>.</li></li>
+        </ul>
         </section>
         <br>
         <section id="week13">
