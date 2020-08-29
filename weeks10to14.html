@@ -136,7 +136,29 @@
         <br>
         <section id="week14">
             <h4>Week 14:</h4>
-
+            <ul>
+                <li>Plain JavaScript objects contain payloads of information to be sent to the Redux store.  Actions are the only way that updates get sent to the store.  The only required property for an action is type – the type will be a unique String.  Best practice: Gather all action types into a separate module.</li>
+                <li>React components will dispatch an action in response to some user interaction – e.g. loading a new view, clicking a button, etc.  In react-redux, we will never dispatch the action directly – we will supply an argument called mapDispatchToProps to the connect() function, which will call the store’s dispatch method for us.</li>
+                <li>Whenever an action is dispatched, a new action object must be created.  Typically, we will write a function called an action creator that will create the object in a consistent error-free way.</li> 
+                <li>For every action, we will create: 1. An action type defined as a String constant, 2. An action creator, a function that returns the action object and has a type property, plus any data (payload) to send to the store to update it.  Then we will connect each action to React component using the connect() function and a mapDispatchToProps argument.  Then, every time an action is dispatched, the Redux store will check all its reducers for a matching action type, then run the code for that action type, which will then update the state.</li> 
+                <li>I practiced setting up a file to hold action types, as well as a file to hold action creators, and setting up an action to be dispatched to the comments reducer to update the Redux store.  I learned to then dispatch that action through setting up a mapDispatchToProps for use in the connect() function.</li>
+                <li>I learned about synchronous code and asynchronous code: synchronous code is when everything happens in order, app wait until a piece of code is finished before continuing.  Asynchronous code starts something, then continue with the program without waiting for it to finish, result is dealt with later.  A common asynchronous call is when a client requests data from server and must wait for a response before using data.</li>
+                <li>Redux Middleware can wrap around dispatch and insert operations before action reaches reducer: logging, making async calls, crash reporting, stopped an action, dispatching other actions, etc.  Middleware can be chained, so multiple middleware libraries can be used in sequence.  Redux applyMiddleware() function, passed as parameter to createStore() function.</li>
+                <li>Redux Thunk is the most useful Middleware libraries.  “Thunk” is a programming technique where we wrap a function inside another function to delay its executive.  This technique is used in Redux Thunk to inject extra operations into an action creator.  Action creators normally return an action (object).</li>
+                <li>A network protocol is a set of rules for how two networked systems will talk to each other.  Rules such as: what kind of data will be exchanged, how the data will be formatted, how the systems will respond to certain types of requests, etc.</li>
+                <li>HTTP (HyperText Transfer Protocol) is a foundation of data communication on the web.  It is considered an application layer protocol.  The browser sends request to the server via HTTP request, and the server responds to the request via HTTP response.</li>
+                <li>I learned about data formats such as JSON and XML.</li>
+                <li>REST or Representational State Transfer, is a software architectural style that defines a set of constraints for creating Web services.  Web Services are resources available over the Web.  There are two basic types: SOAP web services and RESTful web services.</li>
+                <li>6 defining constraints of rest – 1. Client-server separation, 2. Statelessness, 3. Uniform Interface, 4. Cacheable, 5. Layered System, 6. Code on Demand.</li>
+                <li>9 HTTP Methods (VERBS) – POST (CRETAE), GET (READ), PUT (UPDATE), DELETE (DELETE), HEAD, CONNECT, OPTIONS, TRACE, CATCH.</li>
+                <li>I learned about JavaScript promises, which has 3 states: pending, fulfilled (or resolved), and rejected.</li>
+                <li>Web APIs provide code constructs (objects, methods, etc.) that are not technically part of JavaScript.   It is built into browsers by default, so we can use them in client-side JavaScript.</li>
+                <li>I practiced fetching from server, fetching handling errors, and fetching post comment.</li>
+                <li>I learned about React-Transition-Group, which composes of Transition, CSSTransition, SwitchTransition, and TransitionGroup.</li>
+                <li>Cretae-react-app comes with a utility that can handle all the concatenation, minification, uglification, compression, etc. with Webpack.  Webpack is a static module bundler for modern JavaScript applications.  When webpack processes the application, it internally builds a dependency graph which maps every module the project needs and generates one or more bundles.</li>
+                <li><strong>Code Challenge:</strong> There was a code challenge this week, which can be found in my CodePen: <a href="https://codepen.io/joannahanchang/pen/zYqNpZq">Redux</a>.</li>
+                <li><strong>Project:</strong> I utilized everything I learned this week and incorporated into my React Nucamp website, which can be found in my <a href="https://github.com/joannahanchang/React-Project-Setup">Github</a>.</li></li>
+            </ul>
         </section>
         </div>
 
