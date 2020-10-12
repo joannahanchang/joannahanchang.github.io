@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap.min.css" />
+
+	<!-- Additional CSS must be placed after Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/bootstrap-social.css" />
+
+	<link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<div class="link-container">
+			<a href="30weeks.html">30 Weeks of Coding</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a href="tech.html">Tech</a>
+			<a href="contact.html">Contact</a>
+		</div>
+    </div>
+
+    <div class="page-container">
+        <div class="col-12 col-sm-12">
+            <div class="contactme">
+                <h2>30 Weeks of Coding</h2> 
+                <h4>I am embarking on a 30-week long coding journey with NuCamp, an engineering bootcamp.</h4>
+                <h4>I am documenting my progress, highlighting the knowledge and skills I have acquired, and showcasing the projects I have created.</h4>
+                <h4>Source: NuCamp</h4>
+            <nav>
+                <br>
+                <a href="#week15">Week 15</a> | <a href="#week16">Week 16</a> | <a href="#week17">Week 17</a> | <a href="#week18">Week 18</a>
+            </nav>
+        </div>
+        <br>
+        <section id="week15">
+            <h4>Week 15:</h4>
+            <ul>
+                <li>I reviewed about React components, including: functional and class components, presentational and container components, local component state, passing props to child components, rendering the view with JSX tags and attributes, embedding JavaScript inside JSX with curly braces, lifecycle methods, etc.</li>
+                 <li><strong>Code Challenge:</strong> There was 1 challenge this week, which can be found in my Expo.io: <a href="https://snack.expo.io/@joannnahanchang/react-native-flatlist-listitem">react-native-flatlist-listitem</a>.</li>
+             </ul>
+        </section>
+        <br>
+        <section id="week16">
+            <h4>Week 16:</h4>
+            <ul>
+                <li>React Native has built-in UI components.  It maps these into corresponding native UI components for both Android and iOS.  There are also many third-party React Native libraries with components and tools to use.</li>
+                <li>I practiced using the Icon component from React Native Elements to create a Favorite icon button that can be pressed to change the icon’s appearance.</li>
+                <li>I practiced adding icons to my Drawer and Stack Navigators, and customized the side drawer in the Drawer Navigation.</li>
+                <li>We reviewed Redux, which is a predictable state container for JavaScript apps.  It is originally created for use with React, but can be used with any JavaScript application.  Influenced by the Flux architectural pattern, especially one of Flux’s primary features: one-way data flow.</li> 
+                <li>Redux has 3 principles: single source o truth, state is read-only, and changes are made with pure functions.  Single source of truth: the Redux store contains a single state object tree that holds all the application state information for the client side.  React components are able to subscribe to this store, then whenever the state gets changed, the components re-render themselves to reflect that change.</li> 
+                <li>State is read-only: the state object is never mutated.  The state object can be replaced by a new state object, but it is never modified.</li>
+                <li>Changes are made with pure functions: the only way that changes happen to the state is through actions, which are plain objects.  These action objects are dispatched to pure functions that are called reducers.  A pure function always gives the same output when given the same inputs.  A reducer function takes the old state and an action as its input, then returns a new state object as its output, which then replaces the old state in the store.</li>
+                <li>We reviewed about Redux Thunk, which allows us to write action creators that return a function instead of an action object, used to inject additional operations such as delaying an action from being dispatched to the reducer.</li>
+                <li>Asynchronous calls using the Fetch API to send a request to a server from an action creator, then wait for a response before continuing.</li>
+                <li>Forms in React Native do not use the <form> element from HTML.  Instead, we have built-in and third-party components and APIs we can use to request the user for information.  For examples, for yes/no, true/false, on/off, etc, we can use the Switch component with React Native.  For multiple options, we can use Picker and Picker.item with React Native.  For entering text, we can use TextInput with React Native.</li>
+                 <li><strong>Code Challenge:</strong> There was 1 challenge this week, which can be found in my Expo.io: <a href="https://snack.expo.io/@joannnahanchang/code-challenge:-rne-rating-component">RNE Rating Component</a>.</li>
+            </ul>     
+        </section>
+        <br>
+        <section id="week17">
+            <h4>Week 17:</h4>
+        <ul>
+            <li>I learned about swipe option buttons, which are commonly seen added to items on lists in mobile applications.  Mobile devices have limited screen size and mobile apps often hide options in this and similar ways.</li>
+            <li>I learned about an alert, which is a way of popping up information in a dialog, usually to confirm some operation with the user.  React Native has a built-in API that we could use to easily create an alert dialog with a title, text, and buttons.</li>
+            <li>I practiced using animations.  There are many third party libraries built on top of the animated library to more easily set up basic animations.  I used the react-native-animatable library as a practice.</li>
+            <li>I learned about performing gestures, which is a natural way for users to interact with a mobile app.  Types of gestures include simple/swipe gestures, quick taps, simultaneous multi-finger touches, etc.  A built-in PanResponder API is a highly customizable and powerful way to manage response to gestures throughout a gesture’s entire lifecycle, from the start of the gesture to the end.</li> 
+            <li>I learned about the redux-persist library that enables us to save the data in the Redux store’s state to the device then rehydrate it when the application is reloaded.</li> 
+            <li>To implement redux-persist:</li>
+            <li>In the createStore function, replace the combineReducers callback persistCombineReducers.</li>
+            <li>Supply persistCombineReducers function with config object with configuration values, including storage type and key.</li>
+            <li>Pass Redux store to persistStore function, which handles saving Redux state to persistent storage whenever state changes, and returns a persistor object.</li>
+            <li>Wrap root component with PersistGate component, passing it the persistor, which will delay app rendering until Redux store has completed rehydrating.</li>
+            <li><strong>Code Challenges:</strong> There were 2 challenges this week, which can be found in my Expo.io and CodePen: <a href="https://snack.expo.io/@joannnahanchang/code-challenge:-animated">Animated</a> and <a href="https://codepen.io/joannahanchang/pen/oNxQRPb">JavaScript Arrays and Objects Manipulation</a>.</li>
+        </ul>
+        </section>
+        <br>
+        <section id="week18">
+            <h4>Week 18:</h4>
+            <ul>
+                <li>I was introduced to the Expo SDK (Software Development Kit), which provides access to device and system functionality such as contacts, camera, and GPS location.  SDK lets us access native capabilities of both iOS and Andorid devices without writing any native code.</li>
+                <li>I learned about using Expo Secure Store API as a way to store small amounts of encrypted data in key-value pairs on our devices, including how to set, get, and delete the data using a unique key.  Expo Secure Store is meant to be used for small amounts of sensitive data and it uses iOS keychain services and Android SharedPreferences/Keystore system.</li>
+                <li>The Expo Secure Store API exposes 3 methods: 1. SecureStore.setItemAsync (key, value, options) returns a promise that will reject if value cannot be stored on the device, 2. SecureStore.getItemAsync (key, options) returns a promise that will resolve to stored value, or resolve to null if no entry for given key, or reject if error occurred, 3. SecureStore. deleteItemAsync(key, options) returns a promise that will reject if the value could not be deleted.</li> 
+                <li>Notifications are a common way of drawing attention by adding an icon to the notification bar and a message to the notification drawer.  Local notifications are generated from the client side; push notifications are generated from the server side (but still use the same mechanism to display the notification on the client).</li> 
+                <li>The Expo Notifications API provides access to both push (remote) notifications and local notifications.  Local notifications can be sent immediately, or at a scheduled time, either once or on a recurring basis.</li>
+                <li>To send an immediate local notifications, we can send use: Notifications.presentLocalNotificationAsync(localNotification), which triggers a local notification immediately; Notifications.scheduleLocalNotificationAsync(localNotification, schedulingOptions), which schedules a local notification to fire at some specific time in the future or at a given interval; and Notifications.dismissNotificationAsync(localNotificationId), which dismisses the notification with the given id (Android only).</li>
+                <li>The localNotification object has 2 required string properties: title and body.</li>
+                <li>We also need to request permission to generate notifications from the underlying operating system using the Expo Permissions API.  We learned a new way to handle JavaScript promises called async/await (new in ECMAScript 2017/ES8).  We could consider it syntactic sugar over the previous way of handling promises with .then promise chains.</li>
+                <li>I learned about two APIs for sharing socially from within our apps: the Expo SDK’s MailComposer API to send emails, and React Native’s own Share API to share to various apps.</li>
+                <li>I learned about the Expo ImagePicker API, which allows the user to choose an image for use in the application by either taking a new photo with the device’s camera, or by choosing an existing image that is saved to the device’s image library.  We can also use the ImageManipulator API that allows us to make edits to an existing image.</li>
+                <li>I also learned about using the react-native-community NetInfo library to access network state information for devices, either once or on subscription basis.</li>
+             </ul>
+        </section>
+        </div>
+
+<footer>
+    <div class="footer">
+        <a role="button" class="btn btn-link" href="mailto:joannahanchang@gmail.com"><i class="fa fa-envelope-o"></i> joannahanchang@gmail.com</a>
+        <br>Joanna Chang | 2020 
+    </div>
+</footer>
+</body>
+</html>
