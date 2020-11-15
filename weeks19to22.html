@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap.min.css" />
+
+	<!-- Additional CSS must be placed after Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/bootstrap-social.css" />
+
+	<link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<div class="link-container">
+			<a href="30weeks.html">30 Weeks of Coding</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a href="tech.html">Tech</a>
+			<a href="contact.html">Contact</a>
+		</div>
+    </div>
+
+    <div class="page-container">
+        <div class="col-12 col-sm-12">
+            <div class="contactme">
+                <h2>30 Weeks of Coding</h2> 
+                <h4>I am embarking on a 30-week long coding journey with NuCamp, an engineering bootcamp.</h4>
+                <h4>I am documenting my progress, highlighting the knowledge and skills I have acquired, and showcasing the projects I have created.</h4>
+                <h4>Source: NuCamp</h4>
+            <nav>
+                <br>
+                <a href="#week19">Week 19</a> | <a href="#week20">Week 20</a> | <a href="#week21">Week 21</a> | <a href="#week22">Week 22</a>
+            </nav>
+        </div>
+        <br>
+        <section id="week19">
+            <h4>Week 19:</h4>
+            <ul>
+                <li>There are 3 categories of node modules – 1. External, third party modules, 2. Node core modules , and 3. File-based modules within our own application.</li>
+                <li>Node.js is organized into a single-threaded event loop.  Node event loop executes incoming requests, one after another.  Whenever it needs to, it will offload I/O requests to system kernel.  When finished, system kernel will let Node know so it can queue associated callbacks and eventually executive them via event loop.</li>
+                <li>The 6 phases of the Node event loop are: time phase, pending callbacks phase, idle, prepare phase, poll phase, check phase, and close callbacks phase.</li>
+                <li>Typically only the timer, poll, and check phases will be relevant to a Node developer – the rest are handled by Node in the background.</li>
+                <li>The browser sends requests to the server via HTTP request and the server responds to the request via HTTP response.</li>
+                <li>Node HTTP module: http.createServer() creates a new instance of http.Server class.  Receives a callback function as a parameter (request handler).  When the server is listening to requests, the request handler is called for every server request.  Use listen method server.listen() with port number and hostname to listen on.</li>
+                <li>Response streams also containers headers, body, as well as statusCode (404, 200, etc.), you can also use setHeaders() to set response headers.  To set response body: res.write(), or you can include the body as an argument to res.end().  Use res.end() at the end of the response to close the response team.  Once a server is created with http.createServer(), you can start it listening with the .listen() method, optionally providing a port and/or hostname – e.g. server.listen(port,hostname).</li>
+                <li>Path and fs are 2 other core modules of Node.   Path: utilities for working with file and directory paths.  Fs: utilities for interacting with local file system.  Other core modules include: process, url, and os.</li>
+                <li>Node core modules were intentionally designed to be small and lightweight.  This leaves room for 3rd party developers to come up with innovative solutions.  One of the most popular server-side third-party Node modules is Express, a framework for building HTTP servers.</li>
+                <li>Express is a fast, unopinionated, minimalist web framework for Node.js.</li>
+                <li>Express can be extended with 3rd party middleware for additional functionality.  There are any middleware libraries available to use, including Morgan (logs information about server requests), body-parser (helps parse body of HTTP request messages), and express.static (built-in Express middleware to serve static files).</li>
+                <li>The 6 defining constraints of Rest include: 1. Client-server separation, 2. Statelessness, 3. Uniform interface, 4. Cacheable, 5. Layered system, 6. Code on demand.</li>
+                <li>The 9 HTTP methods (verbs) are post, get, put, delete, head, connect, options, trace, and catch.</li>
+                <li>Express has routing methods for each HTTP verb such as get/post/put/delete.</li>
+                <li>Each method takes a path and a callback function – Express calls it a “handler,” more or less what Node docs call a “request handler” – it handles the request that comes in via that particular HTTP verb.</li>
+                <li><strong>Code Challenges:</strong> There were 2 challenges this week, which can be found in my Glitch: <a href="https://glitch.com/edit/#!/code-challenge-node-modules?path=server.js%3A17%3A58">Node Modules</a> and <a href="https://glitch.com/edit/#!/quick-classy-salsa?path=server.js%3A8%3A44">Callbacks</a>.</li>
+             </ul>
+        </section>
+        <br>
+        <section id="week20">
+            <h4>Week 20:</h4>
+            <ul>
+                <li>Increasing demand for new capabilities led to more recent development of databases loosely grouped as NoSQL.  There are at least 4 loose classifications of NoSQL databases: key-value based (Redis), column-family based (Cassandra), graph based (Neo4j), and document based (MongoDB).</li>
+                <li>A MongoDB database contains collections, collections contain documents, documents contain fields.</li>
+                <li>A major advantage of NoSQL databases is scalability.  Vertical scaling improves capacity (RAM, CPU, disk space, etc.) of existing server to be able to handle more data.  Horizontal scaling distributes database over multiple servers, ideal for cloud computing.</li>
+                <li>SQL databases are difficult to distribute, limited to vertical scaling.  NoSQL databases e.g. MongoDB are designed for horizontal scaling.  MongoDB uses a method called “sharding” to distribute data.</li> 
+                <li>Another advantage of NoSQL databases is ease of deployment.  With a NoSQL database that stores data as JSON-like documents, much easier to map data to JavaScript objects for use in Node applications.  With SQL databases, they must perform more work to map to the server-side application’s programming language.</li> 
+                <li>There are some advantages of SQL databases: faster at performing complex, analytical queries, more stable for high transaction uses with frequent updates to records, where data integrity is important, more established, tested technology, more tools, and  wider user base.</li>
+                <li>Mongo REPL shell is used to manually access and update databases, helpful for debugging.  However, we need to access and manipulate the database from within a Node application.  The official MongoDB Node.js Driver provides a high-level API that enables us to interact with MongoDB server from a Node app.</li>
+                <li>I learned about callback hell, which is an anti-pattern seen in code of asynchronous programming.  One reason callback hell occurs is the tendency to write code with a top-down approach.</li>
+                <li>4 ways to solve callback hell are: 1. Write comments, 2. Split functions into smaller functions, 3. Using Promises, and 4. Using async/await.</li>
+                <li>A Promise is a JavaScript mechanism to support asynchronous computation.  It acts as a proxy/placeholder for a value that is not known at the moment, so that code execution can continue.  Then later, the Promise will reject or resolve, depending on whether the value was able to be obtained.</li>
+                <li>A Mongoose ODM (Object Data Model or Object Document Mapper/Mapping) is an elegant MongoDB object modeling for node.js.  It is built on top of MongoDB Node.js Driver and wraps around it.</li>
+                <li>Mongoose schemas are schemas with information about document structure.  It generates a model for schema + a specific MongoDB collection.  It uses model to instantiate new documents for that collection.  The Mongoose model will enforce structure from schema and validate documents.  The model also interacts with documents through static methods.</li>
+                <li>A schema instance is an object whose properties pre-defined fields of a document.  Schema data types include string, number, date, buffer, Boolean, mixed, objected, array, decimal128, and map.  Other configuration options include required, unique, default, min, max, etc.</li>
+                <li>We can create a new model with the mongoose.model() method, passing a name that will be sued to figure out the collection this model will be used for, and the schema to use.</li>
+                <li>The model validates new document against a copy of the schema that the model was created with, and the model inserts document into corresponding collection.</li>
+                <li>Models can have 2 methods – static and non-static methods.  Static methods access all instances of the model and are methods on a class (or constructor function) rather than on an instance of a class.  In the API docs, non-static methods (used on instances, not the class) will be marked like this: Model.prototype.methodname.</li>
+                <li><strong>Code Challenge:</strong> There was 1 challenge this week, which can be found in my Glitch: <a href="https://glitch.com/edit/#!/wakeful-stupendous-comfort?path=server.js%3A1%3A0">Express Routes</a>.</li>
+            </ul>     
+        </section>
+        <br>
+        <section id="week21">
+            <h4>Week 21:</h4>
+        <ul>
+            <li>Basic authentication is the most basic HTTP mechanism for authenticating users.  Client must submit authentication credentials to request protected resource.  If credentials are not present/invalid, server can challenge client for username/password.  If valid, server will grant access.  Credentials must be presented with every client request.  If client tries to access protected endpoint, server checks for request header of “Authorization” containing credentials.  If no such header, or invalid credentials, server can respond with header of “WWW-Authenticate” and “Basic.”  Browser will then prompt user to enter username/password.  Encodes as value for “Authorization” header, re-sends request.  Server will then grant access if credentials are valid.</li>
+            <li>Each middleware is a function.  When a client request comes in, request and response objects are constructed then sent into each middleware function in turn.  The middleware function will parse the request and can add information to the response stream or even end it.  If not ended, pass request and response to next middleware function, repeat until response is ended or run out of middleware.</li>
+            <li>HTTP cookies enable the server to temporarily store information on client-side that the client can use for authentication after authenticating once with user/pass.</li>
+            <li>HTTP cookies are small pieces of data sent from a web server and stored on the client side computer.  Browsers  include the cookie in the request header for requests to the server that originated the cookie.</li>
+            <li>First time client authenticates with server, server sends a Set-Cookie response header back to client that contains a cookie as its value, with optional expiration.  Client stores cookie and includes it in the headers of subsequent requests to that server.  When server receives request and sees valid cookie in header, then will grant access without asking for username/password.</li>
+            <li>Supports sessions generate cookies that carry session IDs, browsers send them to the server with every request, server tracks users by session ID and stores server-side data.</li>
+            <li>Passport.authenticate() middleware will intercept request and attempt to authenticate using given strategy.  If successful, passport adds user property to request object with information about user (req.user).  Then passes control to next middleware to continue handling request.</li>
+            <li>The Local Strategy handles authentication with username/password stored on server.  We can use Local Strategy plug in by installing passport-local, import Strategy constructor, then passport.use().</li>
+            <li>We can store password more securely via hashing and salting.  Hashing runs through hashing algorithm to transform password; one-way process, cannot be decrypted, not an encryption method.  Salting adds unique, random string before hash, increases security.</li>
+            <li>Passport local Mongoose provides various helper methods for authentication.  E.g. a static method on the model called .authenticate().</li>
+            <li>There are 2 main drawbacks to Sessions:  1. Not scalable, server must keep track of user sessions, constantly create/read/update/delete session data on server side, difficult with many users.  2. Mobile applications typically do not work well with sessions.</li>
+            <li>Tokens are scalable and easier for mobile applications to use.  Token-based authentication helps with cross-origin resource-sharing (CORS) and cross-site request forgery (CSRF) problems.   It is also easier to use tokens to share authentication between sites.</li>
+            <li>Token-based authentication is when user logs into server, with Local Strategy or 3rd party.  Once user is validated, server issues token to client.  All subsequent requests from client side must bear the token, in header, body, or even in URL query parameters (as part of URL).  Token is stored on client side, server does not store it, thus more scalable.</li> 
+            <li>JSON Web Token (JWT) is self-contained and carries all information necessary to identify a user, thus can be shared between applications.  It is encoded as a long, 3-part string: Header, Payload, and Signature, with each part encoded with Base64Url encoding (similar to Base64), then joined together with two periods.</li>
+            <li>Header contains specific algorithm used to sign the token and token type, Payload includes information to identify user, and Signature is created with encoded Header, encoded Payload, server-side secret key, and algorithm specified in the header.</li>
+            <li>The JSONwebtoken library contains methods to sign, issue, and verify JWTs from a Node application.  The passport-jwt provides plug in (Strategy) for Passport for JWT-based authentication.</li>
+            <li>SQL/relational databases are designed with relationships between databases records in mind.  Records are able to link to/reference other records that can reference other records, etc.  NoSQL databases’ documents are self-contained, no references to other documents.  MongoDB has added some support for relational functionality.</li> 
+            <li><strong>Code Challenge:</strong> There were 1 challenge this week, which can be found in my Glitch: <a href="https://glitch.com/edit/#!/prairie-glaze-stick?path=server.js%3A14%3A17">Secure Route</a>.</li>
+        </ul>
+        </section>
+        <br>
+        <section id="week22"> 
+            <h4>Week 22:</h4>
+            <ul>
+                <li>Symmetric-key cryptography is when sender and receiver share secret key known to both sides.  Sender encrypts message using encryption algorithm + key.  Receiver decrypts message using corresponding decryption algorithm and same secret key.  Even if message is intercepted and algorithm is known, it is very difficult to decrypt without secret key (though not impossible).  The drawback is that the secret key must be sent before using, so secret key itself is vulnerable to being intercepted.</li>
+                <li>Public-key cryptography: there are 2 different keys,  public and private keys, which are cryptographically related but impossible to decipher private key from public key.  Receiver makes its public key available to senders, keeps private key to itself.  Sender uses encryption algorithm + receiver’s public key to encrypt message before sending, public key only used to encrypt.  Only the receiver’s private key can decrypt the message.</li> 
+                <li>There are 2 main cryptographic protocols for networked communication , Secure Socket Layer (SSL) and Transport Layer Security (TLS).</li> 
+                <li>The secure channel has 2 priorities: 1. Privacy of the massage so that 3rd parties cannot read it, 2. Integrity of the massage so that 3rd parties cannot alter it.</li>
+                <li>HTTPS is HTTP with TLS added for privacy and integrity.</li>
+                <li>Multer is a middleware library built on top of Busboy library.  Busboy is middleware for processing incoming form data, Multer adds ability to process multipart/form-data.  Multer adds file/files and body objects to request object.  Body contains text from any form text fields, and file contains either a file + additional info about file, or an array containing multiple files + additional info per file.</li>
+                <li>Origin is a combination of URI scheme (first part of a URI that defines the protocol, e.g. http, https, ftp, etc.), hostname, and port number.</li>
+                <li>Web pages often pull in data from many different sites.  For security, modern browsers impose a same-origin policy that restricts how documents/scripts from one origin interact with resources from another origin.  This prevents a malicious script on one page from accessing sensitive data on another page.</li>
+                <li>When a web page requires resources from another page that is not of same origin, it could be blocked due to browser’s same-origin policy.  The server can explicitly allow resource from another origin to be shared through CORS.</li>
+                <li>CORS mechanisms give servers cross-domain access controls, and Access-Control-Allow-Origin lets browser know if certain origin is allowed to access a resource.</li>
+                <li>Simple requests: must only use get, post, head methods.  Server can set endpoints to accept simple requests regardless of origin.  Server sends CORS header to browser saying Access-Control-Allow-Origin with wildcard value (*), this tells browser requests from any origin are OK, allow access despite same-origin policy.  Or server can set whitelist of origins to accept.</li>
+                <li>Prelighted requests: are cross-origin requests that do not meet simple request criteria; considered less safe as they can cause changes in existing server data (e.g., put, delete).  Must send preflight request to server before actual request.  HTTP OPTIONS request including CORS request headers such as Origin, Access-Contorl-Request-Method, etc. to let server know what client wants to send.  Server responds with status code 200 if it is OK to send the actual request, along with CORDS response headers about what server will accept, such as Access-Control-Allow-Origin, Access-Control-Allow-Methods.  Client then decides from server’s response whether to send actual request.</li>
+                <li>OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP server such as Facebook.</li>
+                <li>Front-end app passes access token to Express server.  Express server passes access token to Facebook’s OAuth server along with App ID and Secret.  If everything is valid, OAuth server grants Express server access to resource server to obtain user’s profile data.  Express server uses profile data to create a local user account/look up an existing user account, then sends user JSON Web Token to use for further access.</li>
+            </ul>
+        </section>
+        </div>
+
+<footer>
+    <div class="footer">
+        <a role="button" class="btn btn-link" href="mailto:joannahanchang@gmail.com"><i class="fa fa-envelope-o"></i> joannahanchang@gmail.com</a>
+        <br>Joanna Chang | 2020 
+    </div>
+</footer>
+</body>
+</html>
