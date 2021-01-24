@@ -68,25 +68,25 @@ body {
 	font-size: 25px;
   }
 
-/* Homepage 30 Weeks of Coding: Unvisited link */
+/* Homepage 22 Weeks of Coding: Unvisited link */
 .weeks:link {
 	color: #cddc39;
 	text-decoration: none;
   }
   
-/* Homepage 30 Weeks of Coding: Visited link */
+/* Homepage 22 Weeks of Coding: Visited link */
 .weeks:visited {
 	color: #cddc39;
 	text-decoration: none;
 }
 
-/* Homepage 30 Weeks of Coding: Mouse over link */
+/* Homepage 22 Weeks of Coding: Mouse over link */
 .weeks:hover {
 	color: #cddc39;
 	text-decoration: underline;
   }
   
-/* Homepage 30 Weeks of Coding: Selected link */
+/* Homepage 22 Weeks of Coding: Selected link */
 .weeks:active {
 	color: #cddc39;
 	text-decoration: underline;
@@ -251,7 +251,7 @@ body {
 	padding: 20px;
 }
 
-/*30 Weeks box: set alignment and colors*/
+/*22 Weeks box: set alignment and colors*/
 .week-box {
 	/* flex: 0 0 auto; */
 	flex-grow: 0;
@@ -268,7 +268,7 @@ body {
 	border: none;
 }
 
-/* 30 Weeks: Hover */
+/*22 Weeks: Hover */
 .week-box:hover {
 	background-color: #cddc39;
 	color: #666565;
@@ -276,7 +276,7 @@ body {
 	outline: 0;
 	opacity: 0.7;
 }
-/* 30 Weeks: Hover */
+/*22 Weeks: Hover */
 .week-box:active {
 	background-color: #cddc39;
 	color: #666565;
@@ -285,7 +285,7 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-/* 30 Weeks: Focus*/
+/*22 Weeks: Focus*/
 .week-box:focus {
 	background-color: #cddc39;
 	color: #666565;
