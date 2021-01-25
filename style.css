@@ -197,6 +197,18 @@ body {
 	padding: 1px 0;
 }
 
+/* Change alignment of Technologies page */
+
+.col-container {
+	display: flex;
+}
+.tech-col {
+	flex: 1 1 0;
+	/* flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0; */
+}
+
 /* Change the position to center */
 .large-text {
 	font-size:60px;
@@ -218,7 +230,7 @@ body {
 	font-size: 25px;
 }
 
-/*Add a color and align the contact form*/
+/* Add a color and align the contact form*/
 .container.projects .col-sm-6 {
   border: solid #cddc39;
   font-size: 20px;
@@ -231,7 +243,7 @@ body {
 	padding: 50px 5px;
 }
 
-/*Change alignment of the image on the About Me page*/
+/* Change alignment of the image on the About Me page*/
 .container.aboutme img {
 	float: left;
 	padding: 0 10px 10px 0;
@@ -239,18 +251,18 @@ body {
 	width: 240px;
 }
 
-/*Change font and alignment of paragraphs on the About Me page*/
+/* Change font and alignment of paragraphs on the About Me page*/
 .container.aboutme p {
 	font-size: 16px;
 	text-align: right;
 }
 
-/*Set height of page container*/
+/* Set height of page container*/
 .page-container {
 	min-height: 500px;
 }
 
-/*30 Weeks: set alignment*/
+/* 22 Weeks: set alignment*/
 .container-weeks {
 	display: flex;
 	flex-wrap: wrap;
@@ -258,7 +270,7 @@ body {
 	padding: 20px;
 }
 
-/*22 Weeks box: set alignment and colors*/
+/* 22 Weeks box: set alignment and colors*/
 .week-box {
 	/* flex: 0 0 auto; */
 	flex-grow: 0;
