@@ -133,7 +133,7 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-/* Change tne font of Contact Me*/
+/* Change the font of Contact Me*/
 .contactme h2 {
 	color: #666565;
 	font-size: 35px;
@@ -188,6 +188,13 @@ body {
 	color: #666565;
 	font-size: 35px;
 	padding: 20px 0;
+}
+
+/* Change the font of Technologies*/
+.techstack h3 {
+	color: #666565;
+	font-size: 35px;
+	padding: 1px 0;
 }
 
 /* Change the position to center */
