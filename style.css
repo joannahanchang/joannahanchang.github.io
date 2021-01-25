@@ -198,7 +198,6 @@ body {
 }
 
 /* Change alignment of Technologies page */
-
 .col-container {
 	display: flex;
 }
@@ -287,7 +286,7 @@ body {
 	border: none;
 }
 
-/*22 Weeks: Hover */
+/* 22 Weeks: Hover */
 .week-box:hover {
 	background-color: #cddc39;
 	color: #666565;
@@ -295,7 +294,7 @@ body {
 	outline: 0;
 	opacity: 0.7;
 }
-/*22 Weeks: Hover */
+/* 22 Weeks: Hover */
 .week-box:active {
 	background-color: #cddc39;
 	color: #666565;
@@ -304,7 +303,7 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-/*22 Weeks: Focus*/
+/* 22 Weeks: Focus*/
 .week-box:focus {
 	background-color: #cddc39;
 	color: #666565;
@@ -313,12 +312,12 @@ body {
 	box-shadow: 0 0 0 0.2rem #cddc39;
 }
 
-/*Center align on Projects page*/
+/* Center align on Projects page*/
 .container projects p {
 	text-align: center;
 }
 
-/*Center images in on Projects page*/
+/* Center images in on Projects page*/
 .container projects img {
 	float: center;
 	padding: 10px;
